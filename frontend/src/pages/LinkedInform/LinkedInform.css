@@ -1,0 +1,264 @@
+ /* Container for the form */
+/*.linkedin-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+} */
+
+/* Form label styling */
+/* label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+} */
+
+/* Input fields */
+/* input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+} */
+
+/* On focus, input border turns blue */
+/* input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+} */
+
+/* Styling the button */
+/* button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+} */
+
+/* Button hover effect */
+/* button:hover {
+  background-color: #0056b3;
+} */
+
+/* Spinner styling */
+/* .spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-align: center;
+} */
+
+/* .spinner {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border: 8px solid rgba(0, 123, 255, 0.3);
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+} */
+
+/* Spinner animation */
+/* @keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+} */
+
+/* Error message styling */
+/* .error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+} */
+
+/* Form heading */
+/* h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.success-message {
+  color: green;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+} */
+
+
+.linkedin-form-container {
+  max-width: 100%;
+  width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.linkedin-form-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 15px;
+  color: #444;
+  text-align: left;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.2s ease-in;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 6px rgba(0, 170, 255, 0.2);
+  outline: none;
+}
+
+button.submitForm {
+  width: 100%;
+  padding: 14px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button.submitForm:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+button.submitForm:hover:not(:disabled) {
+  background-color: #0088cc;
+}
+
+/* Loading Spinner */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-left-color: #00aaff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 16px;
+  color: #666;
+  margin-top: 12px;
+}
+
+.progress-text {
+  font-size: 30px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.error-message {
+  background-color: #ffefef;
+  color: #d8000c;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #d8000c;
+}
+
+.success-message {
+  background-color: #e6ffee;
+  color: #28a745;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+button svg {
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .linkedin-form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button.submitForm {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

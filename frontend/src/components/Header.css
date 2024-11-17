@@ -1,0 +1,102 @@
+.header {
+  border: 2px solid #3636361f;
+  background-color: #f6f8fa;
+  color: #ebe0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_toggle {
+  margin-top: 0px;
+  background-color: #f6f8fa;
+  font-size: 20px;
+  cursor: pointer;
+  width: 8cqb;
+  color: rgb(0, 0, 0);
+  border-radius: 8%;
+  border: none;
+  margin-right: 15px; /* Adjust space between button and welcome message */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar_toggle:hover {
+  background-color: #aac8ff !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.sidebar_toggle:focus {
+  outline: none;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+
+h1 {
+
+  margin: 0;
+  font-size: 20px;
+}
+
+.logout-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #f6f8fa;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.user-email {
+  margin-left: 50px;
+  font-size: 16px;
+  color: #090909;
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+.headerimg{
+  height: 35px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
