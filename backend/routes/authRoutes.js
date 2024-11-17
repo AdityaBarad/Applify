@@ -1,29 +1,3 @@
-// import express from 'express';
-// import { registerUser, loginUser } from '../controllers/authController.js';
-
-// const router = express.Router();
-
-// router.post('/register', registerUser);
-// router.post('/login', loginUser);
-
-
-// export default router;
-
-
-// import express from 'express';
-// import { registerUser, loginUser, checkAuth, logoutUser } from '../controllers/authController.js';
-
-// const router = express.Router();
-
-// router.post('/register', registerUser);
-// router.post('/login', loginUser);
-// router.get('/check-auth', checkAuth);
-// router.post('/logout', logoutUser);
-
-// export default router;
-
-
-
 import express from 'express';
 import passport from 'passport';
 import { registerUser, loginUser, checkAuth, logoutUser } from '../controllers/authController.js';

@@ -1,10 +1,10 @@
 import pg from 'pg';
 
 const db = new pg.Client({
-  user: 'postgres',
+  user: '',
   host: 'localhost',
-  database: 'applify_db',
-  password: 'Aditya@2004',
+  database: '',
+  password: '',
   port: 5432,
 });
 

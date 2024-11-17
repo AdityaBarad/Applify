@@ -1,9 +1,9 @@
 import express from 'express';
-import  {runPuppeteer, getJobProgress}  from '../controllers/LinkedInautomation.js';
+import  {run, getJobProgress}  from '../controllers/LinkedInautomation.js';
 
 const router = express.Router();
 
-router.post('/LinkedIn_apply', runPuppeteer);
+router.post('/LinkedIn_apply', run);
 router.get('/job-progress', getJobProgress);
 
 export default router;

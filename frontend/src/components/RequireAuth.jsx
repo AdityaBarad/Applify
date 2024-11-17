@@ -1,35 +1,3 @@
-// import React from 'react';
-// import { Navigate } from 'react-router-dom';
-
-// const RequireAuth = ({ children }) => {
-//   const authToken = localStorage.getItem('authToken');
-
-//   if (!authToken) {
-//     return <Navigate to="/login" replace />;
-//   }
-
-//   return children;
-// };
-
-// export default RequireAuth;
-
-// import React from 'react';
-// import { Navigate } from 'react-router-dom';
-
-// const RequireAuth = ({ children }) => {
-//   const authToken = localStorage.getItem('authToken');
-
-//   if (!authToken) {
-//     return <Navigate to="/login" replace />;
-//   }
-
-//   return children;
-// };
-
-// export default RequireAuth;
-
-
-
 
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
